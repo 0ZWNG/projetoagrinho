@@ -1,134 +1,128 @@
-/* Reset e fontes básicas */
+/* Reset e estrutura básica */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background: #f3f3f3;
-    color: #333;
-    line-height: 1.6;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f7f7f7;
+  color: #333;
+  line-height: 1.6;
 }
 
+/* Header */
 header {
-    background: #2c3e50;
-    color: #fff;
-    padding: 20px 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+  background: #2c3e50;
+  color: #fff;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 header h1 {
-    font-size: 1.8rem;
+  font-size: 1.8rem;
 }
 
 nav ul {
-    display: flex;
-    list-style: none;
-    gap: 20px;
+  list-style: none;
+  display: flex;
+  gap: 20px;
 }
 
 nav a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
 }
 
 nav a:hover {
-    color: #f1c40f;
+  color: #f1c40f;
 }
 
 /* Hero */
 .hero {
-    background: url('https://images.unsplash.com/photo-1581090700227-4c4f50df812c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80') no-repeat center center/cover;
-    height: 60vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    text-align: center;
+  background: url('https://images.unsplash.com/photo-1581090700227-4c4f50df812c?auto=format&fit=crop&w=1350&q=80') center/cover no-repeat;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
 }
 
 .hero-text h2 {
-    font-size: 3rem;
-    background: rgba(0,0,0,0.5);
-    padding: 10px;
+  font-size: 3rem;
+  background: rgba(0,0,0,0.5);
+  padding: 10px;
+  border-radius: 5px;
 }
 
+/* Grid Sections */
 .grid-section {
-    padding: 60px 40px;
-    background-color: #fff;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 30px;
-    text-align: center;
+  padding: 60px 40px;
+  background-color: #fff;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  text-align: center;
 }
 
 .grid-section h2 {
-    grid-column: 1/-1;
-    font-size: 2rem;
-    margin-bottom: 20px;
+  grid-column: 1/-1;
+  font-size: 2rem;
+  margin-bottom: 20px;
 }
 
 .card {
-    background: #e8f5e9;
-    padding: 20px;
-    border-radius: 10px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: #e8f0fe;
+  padding: 20px;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
-.form-section {
-    padding: 50px 40px;
-    background: #ecf0f1;
+.card.green {
+  background: #e0f8e9;
 }
 
-form {
-    max-width: 600px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
+/* Solução verde */
+.solucao {
+  background: #f0fff4;
 }
 
-form label {
-    margin-top: 15px;
+/* Futuro Conectado */
+.futuro-section {
+  background: #ecf0f1;
+  padding: 50px 40px;
+  text-align: center;
 }
 
-form input, form textarea {
-    padding: 10px;
-    margin-top: 5px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
+.futuro-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
 }
 
-button {
-    margin-top: 20px;
-    padding: 12px;
-    background: #27ae60;
-    color: white;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 1rem;
-    transition: background 0.3s ease;
+.futuro-section p {
+  max-width: 700px;
+  margin: 10px auto;
+  font-size: 1.1rem;
+  line-height: 1.8;
 }
 
-button:hover {
-    background: #219150;
-}
-
+/* Footer */
 footer {
-    background: #2c3e50;
-    color: white;
-    text-align: center;
-    padding: 15px;
+  background: #2c3e50;
+  color: white;
+  text-align: center;
+  padding: 15px;
 }
+
